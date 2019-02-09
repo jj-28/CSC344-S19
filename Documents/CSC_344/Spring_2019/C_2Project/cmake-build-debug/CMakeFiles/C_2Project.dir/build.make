@@ -57,27 +57,27 @@ include CMakeFiles/C_2Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C_2Project.dir/flags.make
 
-CMakeFiles/C_2Project.dir/main.c.o: CMakeFiles/C_2Project.dir/flags.make
-CMakeFiles/C_2Project.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C_2Project.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C_2Project.dir/main.c.o   -c /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/main.c
+CMakeFiles/C_2Project.dir/CMicroproject.c.o: CMakeFiles/C_2Project.dir/flags.make
+CMakeFiles/C_2Project.dir/CMicroproject.c.o: ../CMicroproject.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C_2Project.dir/CMicroproject.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C_2Project.dir/CMicroproject.c.o   -c /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMicroproject.c
 
-CMakeFiles/C_2Project.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C_2Project.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/main.c > CMakeFiles/C_2Project.dir/main.c.i
+CMakeFiles/C_2Project.dir/CMicroproject.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C_2Project.dir/CMicroproject.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMicroproject.c > CMakeFiles/C_2Project.dir/CMicroproject.c.i
 
-CMakeFiles/C_2Project.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C_2Project.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/main.c -o CMakeFiles/C_2Project.dir/main.c.s
+CMakeFiles/C_2Project.dir/CMicroproject.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C_2Project.dir/CMicroproject.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMicroproject.c -o CMakeFiles/C_2Project.dir/CMicroproject.c.s
 
 # Object files for target C_2Project
 C_2Project_OBJECTS = \
-"CMakeFiles/C_2Project.dir/main.c.o"
+"CMakeFiles/C_2Project.dir/CMicroproject.c.o"
 
 # External object files for target C_2Project
 C_2Project_EXTERNAL_OBJECTS =
 
-C_2Project.exe: CMakeFiles/C_2Project.dir/main.c.o
+C_2Project.exe: CMakeFiles/C_2Project.dir/CMicroproject.c.o
 C_2Project.exe: CMakeFiles/C_2Project.dir/build.make
 C_2Project.exe: CMakeFiles/C_2Project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable C_2Project.exe"

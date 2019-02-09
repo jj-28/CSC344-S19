@@ -123,32 +123,32 @@ C_2Project/fast:
 	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/build
 .PHONY : C_2Project/fast
 
-main.o: main.c.o
+CMicroproject.o: CMicroproject.c.o
 
-.PHONY : main.o
+.PHONY : CMicroproject.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/main.c.o
-.PHONY : main.c.o
+CMicroproject.c.o:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/CMicroproject.c.o
+.PHONY : CMicroproject.c.o
 
-main.i: main.c.i
+CMicroproject.i: CMicroproject.c.i
 
-.PHONY : main.i
+.PHONY : CMicroproject.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/main.c.i
-.PHONY : main.c.i
+CMicroproject.c.i:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/CMicroproject.c.i
+.PHONY : CMicroproject.c.i
 
-main.s: main.c.s
+CMicroproject.s: CMicroproject.c.s
 
-.PHONY : main.s
+.PHONY : CMicroproject.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/main.c.s
-.PHONY : main.c.s
+CMicroproject.c.s:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/CMicroproject.c.s
+.PHONY : CMicroproject.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... C_2Project"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... CMicroproject.o"
+	@echo "... CMicroproject.i"
+	@echo "... CMicroproject.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/C_2Project.dir/main.c.o"
+  "CMakeFiles/C_2Project.dir/CMicroproject.c.o"
   "C_2Project.pdb"
   "C_2Project.exe"
   "libC_2Project.dll.a"
