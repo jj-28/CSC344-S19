@@ -16,6 +16,7 @@ int main () {
     char nums[5];
     int num_of_slots;
     struct Item i1;
+    struct Item * i_ptr = &i1;
 
     printf("List number of shelves in the unit: \n");
     scanf("%d", &num_of_shelves);
@@ -23,7 +24,6 @@ int main () {
 
     printf("List number of slots on each shelf : \n");
     scanf("%d", &num_of_slots);
-
     char choice;
 
     //allocates memory for all of the items in the space
@@ -33,22 +33,27 @@ int main () {
         unit_1[i] = malloc(sizeof(struct Item));
     }
 
-
     do {
         int x_coord;
         int y_coord;
-        printf("List item Location separated by spaces: ");
-        scanf("\n %d, %d",&x_coord, &y_coord);
-        printf("List the item information: Name, Price and Location (X, Y), separated by one space. \n Type /Q when finished. \n");
-        scanf(" %s, %d ", i1.name,  i1.price) ;
-        strcpy(unit_1 [x_coord] [y_coord].name, unit_1 [x_coord] [y_coord].name);
-        strcpy(unit_1 [x_coord] [y_coord].price, unit_1 [x_coord] [y_coord].price);
-        printf("Item %s with price $%d was added at Row %d , Column %d. \n", , i1.name, x_coord, y_coord);
-        printf("(Continue? (C) | Quit? (Q)");
+        printf("List item Row:\n");
+        scanf("%d", &x_coord);
+        printf("List item Column:\n");
+        scanf("%d", &y_coord);
 
+        printf("List item Name:\n");
+        scanf(" %s", i_ptr-> name);
+        printf("List item price:\n");
+        scanf("%d", i_ptr-> price);
+        printf("%s", i_ptr->name);
+        strcpy(unit_1 [x_coord] [y_coord].name, i1.name);
+        unit_1 [x_coord] [y_coord].price = i1.price;
+        printf("Item %s with price $%d was added at Row %d , Column %d. \n",  unit_1[x_coord] [y_coord].name,
+                unit_1 [x_coord] [y_coord].price,  &x_coord, &y_coord);
+        printf("(Continue? (C) | Quit? (Q) \n");
         scanf("%c", &choice);
 
-    } while (choice == "c");
+    } while (strcmp("c", choice)==0 );
 
 //for (int i =0 ; i < num_of_shelves; i++) {
 //    for (int j = 0; j < num_of_slots; j++) {
