@@ -1,5 +1,5 @@
 //
-// Created by Jeffrey on 2/8/2019.
+// Created by Jeffrey Johnson (804844514) on 2/8/2019.
 //
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,6 +17,7 @@ int main () {
     int num_of_slots;
     struct Item i1;
     struct Item * i_ptr = &i1;
+//    char look up
 
     printf("List number of shelves in the unit: \n");
     scanf("%d", &num_of_shelves);
@@ -24,7 +25,7 @@ int main () {
 
     printf("List number of slots on each shelf : \n");
     scanf("%d", &num_of_slots);
-    char choice;
+    char choice [1];
 
     //allocates memory for all of the items in the space
     int total = num_of_shelves * num_of_slots;
@@ -44,23 +45,31 @@ int main () {
         printf("List item Name:\n");
         scanf(" %s", i_ptr-> name);
         printf("List item price:\n");
-        scanf("%d", i_ptr-> price);
-        printf("%s", i_ptr->name);
+        scanf("%d", &i_ptr-> price);
+        //breaks here
         strcpy(unit_1 [x_coord] [y_coord].name, i1.name);
         unit_1 [x_coord] [y_coord].price = i1.price;
         printf("Item %s with price $%d was added at Row %d , Column %d. \n",  unit_1[x_coord] [y_coord].name,
-                unit_1 [x_coord] [y_coord].price,  &x_coord, &y_coord);
+                unit_1[x_coord] [y_coord].price,  x_coord, y_coord);
         printf("(Continue? (C) | Quit? (Q) \n");
-        scanf("%c", &choice);
+        scanf("%s", choice);
 
-    } while (strcmp("c", choice)==0 );
+    } while (strcmp("C", choice)==0 );
+    printf("=========LOOKUP========= \n");
+    do {
+        int x;
+        int y;
+        printf("Enter the x coordinate of the item you want to look up: \n");
+        scanf("%d", &x);
+        printf("Enter the y coordinate of the item you want to look up: \n");
+        scanf("%d", &y);
+        printf("Item %s with price $%d was added at Row %d , Column %d. \n",  unit_1[x] [y].name,
+               unit_1[x] [y].price,  x, y);
+    printf("(Continue? (C) | Quit? (Q) \n");
+    scanf("%s", choice);
+    } while (strcmp("C", choice)==0 );
 
-//for (int i =0 ; i < num_of_shelves; i++) {
-//    for (int j = 0; j < num_of_slots; j++) {
-//        printf("Item %s with price $%d was added at Row %d , Column %d. \n", unit_1[i][j]->name, unit_1[i][j]->price);
-//    }
-//}
-    printf("done")
+    printf("Program Finished");
             ;
     return 0;
 }

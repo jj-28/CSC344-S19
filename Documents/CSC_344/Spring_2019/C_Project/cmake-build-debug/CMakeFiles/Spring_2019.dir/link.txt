@@ -1,2 +1,0 @@
-/usr/bin/ar.exe qc libSpring_2019.a  CMakeFiles/Spring_2019.dir/library.c.o CMakeFiles/Spring_2019.dir/Microproject.c.o CMakeFiles/Spring_2019.dir/CMainProject.c.o
-/usr/bin/ranlib.exe libSpring_2019.a
