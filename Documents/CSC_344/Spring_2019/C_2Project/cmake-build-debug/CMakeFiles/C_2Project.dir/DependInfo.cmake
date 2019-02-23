@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMicroproject.c" "/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/cmake-build-debug/CMakeFiles/C_2Project.dir/CMicroproject.c.o"
+  "/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/C_MainProject.c" "/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/cmake-build-debug/CMakeFiles/C_2Project.dir/C_MainProject.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -150,6 +150,33 @@ CMicroproject.c.s:
 	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/CMicroproject.c.s
 .PHONY : CMicroproject.c.s
 
+C_MainProject.o: C_MainProject.c.o
+
+.PHONY : C_MainProject.o
+
+# target to build an object file
+C_MainProject.c.o:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/C_MainProject.c.o
+.PHONY : C_MainProject.c.o
+
+C_MainProject.i: C_MainProject.c.i
+
+.PHONY : C_MainProject.i
+
+# target to preprocess a source file
+C_MainProject.c.i:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/C_MainProject.c.i
+.PHONY : C_MainProject.c.i
+
+C_MainProject.s: C_MainProject.c.s
+
+.PHONY : C_MainProject.s
+
+# target to generate assembly for a file
+C_MainProject.c.s:
+	$(MAKE) -f CMakeFiles/C_2Project.dir/build.make CMakeFiles/C_2Project.dir/C_MainProject.c.s
+.PHONY : C_MainProject.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... CMicroproject.o"
 	@echo "... CMicroproject.i"
 	@echo "... CMicroproject.s"
+	@echo "... C_MainProject.o"
+	@echo "... C_MainProject.i"
+	@echo "... C_MainProject.s"
 .PHONY : help
 
 

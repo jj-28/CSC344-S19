@@ -77,6 +77,9 @@
 		<Unit filename="/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMicroproject.c">
 			<Option target="C_2Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/C_MainProject.c">
+			<Option target="C_2Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/jeffr/Documents/CSC_344/Spring_2019/C_2Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

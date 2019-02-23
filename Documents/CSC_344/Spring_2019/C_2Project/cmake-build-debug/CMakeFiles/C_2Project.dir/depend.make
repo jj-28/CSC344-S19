@@ -3,3 +3,5 @@
 
 CMakeFiles/C_2Project.dir/CMicroproject.c.o: ../CMicroproject.c
 
+CMakeFiles/C_2Project.dir/C_MainProject.c.o: ../C_MainProject.c
+

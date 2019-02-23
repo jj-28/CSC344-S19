@@ -1,1 +1,1 @@
-/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/C_2Project.dir/CMicroproject.c.o  -o C_2Project.exe -Wl,--out-implib,libC_2Project.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/C_2Project.dir/CMicroproject.c.o CMakeFiles/C_2Project.dir/C_MainProject.c.o  -o C_2Project.exe -Wl,--out-implib,libC_2Project.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
