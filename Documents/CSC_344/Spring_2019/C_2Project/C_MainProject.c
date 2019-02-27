@@ -49,6 +49,7 @@ void append (int c) {
     struct Node* n2 = make_node(c);
     if (a_ptr == NULL) {
         h=n2;
+//        current=h;
         return;
     }
 
@@ -57,6 +58,7 @@ void append (int c) {
     }
     n2->previous = a_ptr;
     a_ptr->next = n2;
+//    current=a_ptr;
 }
 //Add nodes to the back of the list
 void prepend(int c) {
@@ -74,7 +76,7 @@ void cptr_left () {
         current= current->previous;
         return;
     }
-    prepend(blank_state);
+//    prepend(blank_state);
     struct Node* n2 = make_node(blank_state);
     current->previous = n2;
     n2->next= current;
@@ -98,13 +100,13 @@ void cptr_right () {
     return;
 }
 
-//Prints all of the nodes in the LL
+////Prints all of the nodes in the LL
 void printdList () {
     struct Node * r  = h;
     while (r != NULL) {
     char c = r->val;
     printf("%c ",c);
-//        printf("%d ",(r->val -0) );
+//        printf("%d ",r->val);
         r= r->next;
 
     }
@@ -115,6 +117,7 @@ void printdList () {
 
 
 int main () {
+
     char input_str[100];
     char buffer [1000];
     char * list [1000];
@@ -126,10 +129,7 @@ int main () {
     //counts how many lines are in the file
     int line_count=0;
     //array containing the raw instructions
-    char ins_7 [20];
-    char testing [20];
     int x = 0;
-    int len;
     FILE *fp;
     printf("%s", "Input file: ");
     scanf("%s", input_str);
@@ -137,24 +137,21 @@ int main () {
     if (fp) {
         while (fgets(buffer, sizeof buffer, fp)) {
             list[x] = strdup(buffer);
-//            strcpy(list[x], buffer);
             x++;
             line_count++;
         }
         //setting list string
         strcpy(init_tape, list[0]);
-//        len = strlen(input_str);
         num_of_states = atoi(list[1]);
         start_state = atoi(list[2]);
         end_state = atoi(list[3]);
 
         for (int i = 0; init_tape[i] != '\r'; i++) {
-//            printf("%d \n", init_tape[i]);
             append((int) (init_tape[i]) - 0);
         }
 //        printdList();
 
-        int total = num_of_states * 256;
+        int total = num_of_states * 255;
         struct Ins **ins_table = malloc(total * sizeof(struct Ins *));
 
         for (int i = 0; i < total; i++) {
@@ -170,29 +167,22 @@ int main () {
          82 = 'R';
          76 = 'L';
          */
-//        printf("%d", (list[7][0]- '0'));
+
         int row_num;
         int ascii_col;
         while (inc < line_count) {
             //populating the instruction table with instructions from the input file
-            row_num= (list[inc][0] - '0');
+            row_num = (list[inc][0] - '0');
             ascii_col = (int) list[inc][2];
-//            int wv =ins_table[row_num][ascii_col].write_val;
             ins_table[row_num][ascii_col].write_val = (int) list[inc][4];
-//            int md= ins_table[row_num][ascii_col].move_direction;
-            ins_table[row_num][ascii_col].move_direction= (int) list[inc][6];
-//            int ns =ins_table[row_num][ascii_col].new_state;
-            ins_table[row_num][ascii_col].new_state = (list[inc][8]- '0');
+            ins_table[row_num][ascii_col].move_direction = (int) list[inc][6];
+            ins_table[row_num][ascii_col].new_state = (list[inc][8] - '0');
             inc++;
         }
-//        printf("%s", "all good");
-//        /*
         current_state = start_state;
-
         int list_val;
         int move_dir;
         int nv;
-
         while (current_state != end_state) {
             list_val = current->val;
             nv= ins_table[current_state][list_val].write_val;
@@ -206,10 +196,20 @@ int main () {
                 current_state = ins_table[current_state][list_val].new_state;
             }
         }
-        printdList();
-        for (int i = 0; i < total; i++) {
-            free(ins_table[i]);
+        struct Node * r  = h;
+        while (r != NULL) {
+            char c = r->val;
+            printf("%c ",c);
+//        printf("%d ",r->val);
+            r= r->next;
+
         }
+//        printf("%d", current->val);
+//        printdList();
+//        for (int i = 0; i < total; i++) {
+//            free(ins_table[i]);
+//        }
+//        free(ins_table);
 
 
     } else {
