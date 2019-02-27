@@ -124,7 +124,7 @@ int main () {
     int start_state;
     int end_state;
     //counts how many lines are in the file
-    int line_count;
+    int line_count=0;
     //array containing the raw instructions
     char ins_7 [20];
     char testing [20];
@@ -191,23 +191,26 @@ int main () {
 
         int list_val;
         int move_dir;
-        int n_s;
-//        int new_val;
-//        int old_state;
+        int nv;
 
-        while (current_state != (int) end_state) {
+        while (current_state != end_state) {
             list_val = current->val;
-            list_val = ins_table[current_state][list_val].write_val;
+            nv= ins_table[current_state][list_val].write_val;
+            current->val =nv;
             move_dir = ins_table[current_state][list_val].move_direction;
             if (move_dir == 76) {
                 cptr_left();
-            } else
+                current_state = ins_table[current_state][list_val].new_state;
+            } else {
                 cptr_right();
-            current_state = ins_table[current_state][list_val].new_state;
-            //hi
+                current_state = ins_table[current_state][list_val].new_state;
+            }
         }
         printdList();
-//*/
+        for (int i = 0; i < total; i++) {
+            free(ins_table[i]);
+        }
+
 
     } else {
         printf("%s", "file name not valid");
