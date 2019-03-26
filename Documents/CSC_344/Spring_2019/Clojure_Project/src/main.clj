@@ -29,7 +29,9 @@
     (and (some symbol? (rest q-list)) (some true? (rest q-list))) (remove boolean? q-list)
     (and (some symbol? (rest q-list)) (some false? (rest q-list))) true
     (and (every? boolean? (rest q-list)) (every? true? (rest q-list))) false
-    :default "ya done goofed :(")
+    :default "ya done goofed"
+
+    )
 
   )
 (defn app [t]
@@ -47,35 +49,37 @@
   )
 
 (defn nand-convert [q]
-  (cond
-    ;not->nand
-    (= 1 (count (rest q))) '(nand x)
-    ;and->nand
-    (= (symbol "and") (first q))  (conj (rest q) (symbol "nand") )
-    ;or->nand
-    (= (symbol "or") (first q))  (cons (symbol "nand") (app (rest q)))
-    )
-  :default "ya played yourself"
+    (cond
+      ;not->nand
+      (= 1 (count (rest q))) (conj (rest q) (symbol "nand"))
+      (= (symbol "and") (first q)) (conj (rest q) (symbol "nand"))
+      ;or->nand
+      (= (symbol "or") (first q)) (cons (symbol "nand") (app (rest q)))
+      :default q )
+
   )
 (defn lookup [i m]
   (get m i i))
 
-(defn nd[q]
-  (map (fn [i]
-         (if (seq? i)
-           (nd i)
-           (nand-convert i)
-           ))
-       q))
+(defn nested [l]
+  (simplify(map (fn [i]
+                      (if (seq? i)
+                        (con i )
+                        i
+                        ))
+                    l))
+  )
 
-
-(defn re-up [q]
-  (map (fn [i]
+(defn con[l ]
+  (nand-convert(map (fn [i]
          (if (seq? i)
-           (re-up i)
-           (simplify i)
+           (con i )
+          i
            ))
-       q))
+       l))
+
+  )
+
 
 (defn bind-values [l m]
   (map (fn [i]
@@ -88,8 +92,15 @@
   )
 
 (defn evalexp [exp bindings]
-  (simplify (re-up (nand-convert (bind-values bindings exp)))))
+  (simplify (nand-convert (bind-values bindings exp))))
 
+
+
+(def p4 '(and x (not z )))
+
+(def p1 '(and x (or x (and y (not z)))))
+(def p2 '(and (and z false) (or x true false)))
+(def p3 '(or true a))
 
 ;(defn simplify [uneval-list]
 ;  (apply (resolve (symbol (first uneval-list))) [uneval-list])
