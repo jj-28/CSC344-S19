@@ -27,42 +27,45 @@
     <session id="-1910526122">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.180" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="3" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.97" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="clj" value="7" />
+          <entry key="clj" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Clojure" value="7" />
+          <entry key="Clojure" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="clj" value="11598" />
+          <entry key="clj" value="14261" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Clojure" value="11598" />
+          <entry key="Clojure" value="14261" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -82,8 +85,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="161">
+              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Fall 2018/Clojure/src/project_mp/m_proj.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -112,41 +124,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Clojure_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clojure_Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clojure_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clojure_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToNamespace.includeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553405473453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553776771258" />
     <property name="cursive.last.file.extension.C\:/Users/jeffr/Documents/CSC_344/Spring_2019/Clojure_Project/src" value="clj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -160,7 +154,7 @@
       <recent name="C:\Users\jeffr\Documents\CSC_344\Spring_2019\Clojure_Project\src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1553407507998">{:repl-history {:ide [], :local [{:command &quot;(nth (second '(nand (nand x))) 2)&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(nth (second '(nand x (nand x))) 2)&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(nth '(nand x (nand x)) 2)&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(second(nth '(nand x (nand x)) 2))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(simp '(false))&quot;, :offset 15, :ns &quot;main&quot;} {:command &quot;(simp '(nand false))&quot;, :offset 20, :ns &quot;main&quot;} {:command &quot;(simp '(nand true))&quot;, :offset 19, :ns &quot;main&quot;} {:command &quot;(simp '(nand x x x))&quot;, :offset 20, :ns &quot;main&quot;} {:command &quot;(simp '(nand x))&quot;, :offset 16, :ns &quot;main&quot;} {:command &quot;(seq? (nth '(nand (nand x))3))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(seq? (nth '(nand (nand x))2))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(seq? (nth '(nand x (nand x))2))&quot;, :offset 32, :ns &quot;main&quot;} {:command &quot;(simp '(nand x (nand x)))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(first '(nand (nand x)))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simp '(nand (nand x)))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(simp '(nand(nand x)))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(first (second '(nand (nand x))))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(identical? (first  '(nand (nand x)) ) (first (second  '(nand (nand x)))))&quot;, :offset 74, :ns &quot;main&quot;} {:command &quot;(def tee'(nand x (nand x)))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(defn tee'(nand x (nand x)))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(= (second q-list) (second (nth q-list 2)))&quot;, :offset 43, :ns &quot;main&quot;} {:command &quot;(= (second '(nand x (nand x) ) ) (second (nth '(nand x (nand x) 2))))&quot;, :offset 69, :ns &quot;main&quot;} {:command &quot;(= (second '(nand x (nand x) ) ) (second (nth '(nand x (nand x) ) 2)))&quot;, :offset 70, :ns &quot;main&quot;} {:command &quot;(= 3 (count '(nand x (nand x))))&quot;, :offset 32, :ns &quot;main&quot;} {:command &quot;(second (nth '(nand x (nand x))2))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x x x x))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(symbol? '(nand x y))&quot;, :offset 21, :ns &quot;main&quot;} {:command &quot;(symbol? (rest'(nand x y) ))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(symbol? (rest '(nand x y)) )&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x x x x y y y ))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x false ))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x  y a d false ))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true true))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(rest '(nand true true true true))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(some? symbol? (rest '(nand true true true true)))&quot;, :offset 50, :ns &quot;main&quot;} {:command &quot;(some? (symbol? (rest '(nand true true true true))))&quot;, :offset 52, :ns &quot;main&quot;} {:command &quot;(some? (seq? (rest '(nand true true true true))))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(some symbol? (rest '(nand true true true true)))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(not(some symbol? (rest '(nand true true true true))))&quot;, :offset 54, :ns &quot;main&quot;} {:command &quot;(nand x true)&quot;, :offset 13, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x ))&quot;, :offset 21, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x x x  ))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(some? (true? (filter (boolean? (rest '(nand x y false) )))))&quot;, :offset 61, :ns &quot;main&quot;} {:command &quot;(true? '(x y false))&quot;, :offset 20, :ns &quot;main&quot;} {:command &quot;(true? '(nand (nand x)))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simplify '(nand  x (nand x)))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y z ))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(true? (x y false))&quot;, :offset 19, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true true true true))&quot;, :offset 38, :ns &quot;main&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(some true? '(nand x true))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true x))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false ))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand x))&quot;, :offset 21, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false true x))&quot;, :offset 32, :ns &quot;main&quot;} {:command &quot;(simplify '(nand false))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(nand (nand x))&quot;, :offset 15, :ns &quot;main&quot;} {:command &quot;(simplify '(nand (nand x)))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(seq? (second '(nand x (nand x))))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(seq? (nth '(nand x (nand x)) 2))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(and (seq? (second '(nand x (nand x)))) (= (second '(nand x (nand x))) (second (nth '(nand x (nand x)) 2)) ))&quot;, :offset 109, :ns &quot;main&quot;} {:command &quot;(second '(nand x (nand x)))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(second (nth q-list 2))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(second (nth '(nand x(nand x)) 2) )&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(= (second '(nand x (nand x))) (second (nth '(nand x(nand x)) 2) ) )&quot;, :offset 68, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x (nand x)))&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x x))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x false))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true true))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y true))\\&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y true))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true true true))&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true true true))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y false))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y z))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(nand-convert '(or x))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify (nand-convert '(or x)))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(simplify (nand-convert '(and a b c d)))&quot;, :offset 40, :ns &quot;main&quot;} {:command &quot;(nand-convert '(and a b c d))&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(symbol \&quot;and\&quot;)&quot;, :offset 14, :ns &quot;main&quot;} {:command &quot;(first '(and a b c d))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(= (symbol \&quot;and \&quot;)  (first '(and a b c d)))&quot;, :offset 43, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(nand x y z))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(or x y z))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify(and-to-nand '(and x y z)))&quot;, :offset 36, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(and x y z))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(or-to-nand '(and x y z))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(or-to-nand '(or x y z))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(def p1 '(and x (or x (and y (not z)))))&quot;, :offset 40, :ns &quot;main&quot;} {:command &quot;(bind-values '{x false, z true} p1)&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(evalexp p1 '{x false, z true})&quot;, :offset 31, :ns &quot;main&quot;} {:command &quot;(nand-convert(bind-values p1 '{x false, z true}))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(nd(bind-values p1 '{x false, z true}))&quot;, :offset 39, :ns &quot;main&quot;} {:command &quot;(bind-values p1 '{x false, z true})&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(seq? (bind-values p1 '{x false, z true}))&quot;, :offset 42, :ns &quot;main&quot;} {:command &quot;(re-up '(nand (nand false (nand (nand false) (nand (nand (nand y (nand true))))))))&quot;, :offset 83, :ns &quot;main&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1553776572065">{:repl-history {:ide [], :local [{:command &quot;(evalexp '{y z} p1 )&quot;, :offset 20, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false ))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand x))&quot;, :offset 21, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify ' (nand false true x))&quot;, :offset 32, :ns &quot;main&quot;} {:command &quot;(nand (nand x))&quot;, :offset 15, :ns &quot;main&quot;} {:command &quot;(seq? (second '(nand x (nand x))))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(seq? (nth '(nand x (nand x)) 2))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(and (seq? (second '(nand x (nand x)))) (= (second '(nand x (nand x))) (second (nth '(nand x (nand x)) 2)) ))&quot;, :offset 109, :ns &quot;main&quot;} {:command &quot;(second '(nand x (nand x)))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(second (nth q-list 2))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(second (nth '(nand x(nand x)) 2) )&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(= (second '(nand x (nand x))) (second (nth '(nand x(nand x)) 2) ) )&quot;, :offset 68, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y true))\\&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true true true))&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true true true))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y false))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(nand-convert '(or x))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify (nand-convert '(or x)))&quot;, :offset 33, :ns &quot;main&quot;} {:command &quot;(simplify (nand-convert '(and a b c d)))&quot;, :offset 40, :ns &quot;main&quot;} {:command &quot;(nand-convert '(and a b c d))&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(symbol \&quot;and\&quot;)&quot;, :offset 14, :ns &quot;main&quot;} {:command &quot;(first '(and a b c d))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(= (symbol \&quot;and \&quot;)  (first '(and a b c d)))&quot;, :offset 43, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(nand x y z))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(or x y z))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify(and-to-nand '(and x y z)))&quot;, :offset 36, :ns &quot;main&quot;} {:command &quot;(and-to-nand '(and x y z))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(or-to-nand '(and x y z))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(or-to-nand '(or x y z))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(def p1 '(and x (or x (and y (not z)))))&quot;, :offset 40, :ns &quot;main&quot;} {:command &quot;(bind-values '{x false, z true} p1)&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(nand-convert(bind-values p1 '{x false, z true}))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(nd(bind-values p1 '{x false, z true}))&quot;, :offset 39, :ns &quot;main&quot;} {:command &quot;(re-up '(nand (nand false (nand (nand false) (nand (nand (nand y (nand true))))))))&quot;, :offset 83, :ns &quot;main&quot;} {:command &quot;(seq? (bind-values p1 '{x false, z true}))&quot;, :offset 42, :ns &quot;main&quot;} {:command &quot;(nd (bind-values p1 '{x false, z true}))&quot;, :offset 13} {:command &quot;(nand-convert (nd (bind-values p1 '{x false, z true})))&quot;, :offset 55, :ns &quot;main&quot;} {:command &quot;(re-up (bind-values p1 '{x false, z true}))&quot;, :offset 43, :ns &quot;main&quot;} {:command &quot;(re-up(bind-values p1 '{x false, z true}))&quot;, :offset 42, :ns &quot;main&quot;} {:command &quot;(bind-values p1 '{x false, z true})&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(nested (bind-values p1 '{x false, z true}))&quot;, :offset 44, :ns &quot;main&quot;} {:command &quot;(nand-convert '(not x))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(nand-convert '(not true))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(nested(con (bind-values p1 '{x false, z true}))&quot;, :offset 48, :ns &quot;main&quot;} {:command &quot;(nand-convert '(and false true x y true))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(nested(con (bind-values p1 '{x false, z true})))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(nested(con (bind-values p2 '{x false, z true})))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(con (bind-values p2 '{x false, z true}))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(con (bind-values p1 '{x false, z true}))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(coM (bind-values p1 '{x false, z true}))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(com (bind-values p1 '{x false, z true}))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(remove (symbol? '(nand a b c d e) )_)&quot;, :offset 38, :ns &quot;main&quot;} {:command &quot;(remove symbol? '(nand a b c d e )_)&quot;, :offset 36, :ns &quot;main&quot;} {:command &quot;(remove symbol? '(nand a b c d e ))&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(remove symbol? '(nand x y z ))&quot;, :offset 31, :ns &quot;main&quot;} {:command &quot;(simplify '(nand a y x z))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;nand x y x &quot;, :offset 11, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y x))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y x y))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(simplify '(nand false))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simplify '(nand false false))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(simplify '(nand false true))&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(simplify '(nand false true true))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(simplify '(nand (nand x)))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x (nand x)))&quot;, :offset 29, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x x))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y))&quot;, :offset 22, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y y))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true))&quot;, :offset 25, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x false))&quot;, :offset 26, :ns &quot;main&quot;} {:command &quot;(simplify '(nand true true))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y true))&quot;, :offset 27, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x true true))&quot;, :offset 30, :ns &quot;main&quot;} {:command &quot;(simplify '(true true true))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(simplify '(nand x y z))&quot;, :offset 24, :ns &quot;main&quot;} {:command &quot;com (bind-values p2 '{x false, z true}))&quot;, :offset 0} {:command &quot;(com (bind-values p2 '{x false, z true}))&quot;, :offset 41, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values ' (nand (nand false) (nand true) (nand false) \n                                  '{x false, z true}))&quot;, :offset 127, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values ' (nand (nand false) (nand true) (nand false) \n                                  '{x false, z true}))))&quot;, :offset 129, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values ' (nand (nand false) (nand true) (nand false)) \n                                  '{x false, z true})))&quot;, :offset 129, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values '(nand (nand true false))  '{x false, z true})))&quot;, :offset 74, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values p2 '{x false, z true})))&quot;, :offset 50, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values p1 '{x false, z true})))&quot;, :offset 50, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values p1 '{})))&quot;, :offset 35, :ns &quot;main&quot;} {:command &quot;(nested (com (bind-values p1 '{z y})))&quot;, :offset 38, :ns &quot;main&quot;} {:command &quot;(bind-values p1 '(z y))&quot;, :offset 23, :ns &quot;main&quot;} {:command &quot;(com(bind-values p1 '(z y)))&quot;, :offset 28, :ns &quot;main&quot;} {:command &quot;(evalexp p2 '{x false, z true})&quot;, :offset 31, :ns &quot;main&quot;} {:command &quot;(simplify (com(bind-values p1 '(z y))))&quot;, :offset 39, :ns &quot;main&quot;} {:command &quot;(simplify (com(bind-values p1 '{z y})))&quot;, :offset 39, :ns &quot;main&quot;} {:command &quot;(simplify (com(bind-values p1 '{x false, z true})))&quot;, :offset 51, :ns &quot;main&quot;} {:command &quot;(simplify (com(bind-values p2 '{x false, z true})))&quot;, :offset 51, :ns &quot;main&quot;} {:command &quot;(simplify (com(bind-values p1 '{})))&quot;, :offset 36, :ns &quot;main&quot;} {:command &quot;(nested (com(bind-values p1 '{})))&quot;, :offset 34, :ns &quot;main&quot;} {:command &quot;(nested (com(bind-values p1 '(z y))))&quot;, :offset 37, :ns &quot;main&quot;} {:command &quot;(nested (com(bind-values p1 '{x false, z true})))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(nested (com(bind-values p2 '{x false, z true})))&quot;, :offset 49, :ns &quot;main&quot;} {:command &quot;(evalexp p1 '{x false, z true})&quot;, :offset 31, :ns &quot;main&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -283,15 +277,22 @@
       <workItem from="1552755918619" duration="2835000" />
       <workItem from="1553109235758" duration="175000" />
       <workItem from="1553316214753" duration="46000" />
-      <workItem from="1553394011537" duration="11098000" />
+      <workItem from="1553394011537" duration="11230000" />
+      <workItem from="1553463331275" duration="3830000" />
+      <workItem from="1553527696166" duration="3174000" />
+      <workItem from="1553630177394" duration="3690000" />
+      <workItem from="1553688558130" duration="1806000" />
+      <workItem from="1553700142422" duration="2663000" />
+      <workItem from="1553707009841" duration="2703000" />
+      <workItem from="1553751797410" duration="888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67815000" />
+    <option name="totallyTimeSpent" value="86701000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.4923717" />
@@ -304,7 +305,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39858156" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -324,7 +325,7 @@
       <window_info anchor="right" id="Leiningen" order="8" weight="0.3295302" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info active="true" anchor="right" content_ui="combo" x="457" y="3" width="589" height="814" id="REPL" order="11" visible="true" weight="0.3362416" />
+      <window_info active="true" anchor="right" content_ui="combo" x="457" y="3" width="589" height="814" id="REPL" order="11" visible="true" weight="0.44906166" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,13 +336,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/proj_2.clj" />
-    <entry file="file://$PROJECT_DIR$/../../Fall 2018/Clojure/src/project_mp/m_proj.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -349,10 +343,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../Fall 2018/Clojure/src/project_mp/m_proj.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="161">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
         </state>
       </provider>
     </entry>
