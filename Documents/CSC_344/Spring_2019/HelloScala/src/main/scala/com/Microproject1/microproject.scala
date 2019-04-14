@@ -45,7 +45,7 @@ object Main extends Combinators {
 //    println(eval(exp2rd, env))
 //
     val exp2c:Tree = parseAll(e, "x+x+7+y").get
-    println(exp2c)
+//    println(exp2c)
     println(eval(exp2c, env))
   }
   }

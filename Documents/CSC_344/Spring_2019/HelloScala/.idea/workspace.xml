@@ -77,18 +77,44 @@
     <session id="-696621118">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.100" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="1" />
+          <entry key="class" value="1" />
+          <entry key="scala" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="1" />
+          <entry key="CLASS" value="1" />
+          <entry key="Scala" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="5139" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="5139" />
         </counts>
       </usages-collector>
     </session>
@@ -98,11 +124,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject1/microproject.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="833">
+              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/main/project/Main_Project.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <element signature="e#27#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Fall 2018/HelloScala/src/main/scala/scala/mainproject/CSC344/MainProject.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+              <folding>
+                <element signature="e#34#72#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +174,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/Microproject/Ting.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/TestCode/schegel/dan/CSC344/TestClass.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/scala/mainproject/CSC344/MainProject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Microproject1/microproject.scala" />
+        <option value="$PROJECT_DIR$/../../Fall 2018/HelloScala/src/main/scala/scala/mainproject/CSC344/MainProject.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/main/project/Main_Project.scala" />
       </list>
     </option>
   </component>
@@ -139,11 +192,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -184,21 +237,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="Microproject1" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloScala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HelloScala" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553706356968" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555215541232" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -218,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.sreduce (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -261,22 +323,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Microproject" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Microproject.Microproject" />
-      <module name="Scala_Project" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Microproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="sreduce (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.project.sreduce" />
+      <module name="HelloScala" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.main.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -319,19 +381,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Microproject" />
       <item itemvalue="Application.Microproject (1)" />
       <item itemvalue="Application.MainProject" />
       <item itemvalue="Application.sreduce" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.sreduce (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sreduce (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.sreduce" />
         <item itemvalue="Application.MainProject" />
         <item itemvalue="Application.Microproject (1)" />
-        <item itemvalue="Application.Microproject" />
       </list>
     </recent_temporary>
   </component>
@@ -399,12 +461,25 @@
       <workItem from="1543245889215" duration="8539000" />
       <workItem from="1543406140347" duration="1275000" />
       <workItem from="1553700078376" duration="53000" />
-      <workItem from="1553705125288" duration="390000" />
+      <workItem from="1553705125288" duration="1109000" />
+      <workItem from="1553878064168" duration="763000" />
+      <workItem from="1554007486261" duration="108000" />
+      <workItem from="1554137320929" duration="923000" />
+      <workItem from="1554334132171" duration="767000" />
+      <workItem from="1554389803292" duration="1299000" />
+      <workItem from="1554482955778" duration="1142000" />
+      <workItem from="1554568236005" duration="9646000" />
+      <workItem from="1554697891452" duration="4398000" />
+      <workItem from="1554782464509" duration="9897000" />
+      <workItem from="1554907284971" duration="539000" />
+      <workItem from="1554933369383" duration="11044000" />
+      <workItem from="1555129822230" duration="581000" />
+      <workItem from="1555212445821" duration="3034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118651000" />
+    <option name="totallyTimeSpent" value="163511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,10 +491,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.15369128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.14392324" />
       <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.19865772" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -428,7 +503,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30638298" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8489933" visible="true" weight="0.30614203" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,10 +511,10 @@
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.32917467" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" sideWeight="0.49930653" weight="0.32855093" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006935" side_tool="true" weight="0.32855093" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.48510638" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15100671" side_tool="true" weight="0.30638298" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.48464492" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32998565" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32998565" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -455,35 +530,35 @@
       <window_info anchor="right" id="REPL" order="12" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1932886" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.16979866" />
+      <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.19865772" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30638298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.32917467" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32917467" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" sideWeight="0.49930653" weight="0.32855093" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32917467" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.48652482" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006935" side_tool="true" weight="0.32855093" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.48510638" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32998565" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="sbt" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32871014" />
+      <window_info anchor="right" id="SciView" order="7" weight="0.3295302" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Leiningen" order="9" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
@@ -496,6 +571,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/project/build.properties">
@@ -511,44 +591,44 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject/MicroPJ.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject/Tree.scala" />
     <entry file="file://$PROJECT_DIR$/../Prolog/PrologDemo" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TestCode/schegel/dan/CSC344/TestClass.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TestCode/schegel/dan/CSC344/TestClass.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/compackage/n/Alternate.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/scala/mainproject/CSC344/MainProject.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject/Ting.scala" />
+    <entry file="file://$USER_HOME$/Downloads/CSC 344-20181114T091758Z-001/Assignment3/Main.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar!/scala/sys/package.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/compackage/n/Alternate.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject1/microproject.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="833">
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/scala/mainproject/CSC344/MainProject.scala">
+    <entry file="file://$PROJECT_DIR$/../../Fall 2018/HelloScala/src/main/scala/scala/mainproject/CSC344/MainProject.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+        <state relative-caret-position="527">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
             <element signature="e#34#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject/Ting.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/main/project/Main_Project.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/CSC 344-20181114T091758Z-001/Assignment3/Main.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Microproject1/microproject.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="250">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#27#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
