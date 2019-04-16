@@ -1,11 +1,11 @@
 [debug] Other repositories:
 [debug] Default repositories:
 [debug] Using inline dependencies specified in Scala.
-[debug] no default cache defined: set to C:\Users\jeffr\.ivy2\cache
 [debug] :: resolving dependencies :: default#helloscala$sbt_2.12;0.1
 [debug] 	confs: [default]
 [debug] 	validate = true
 [debug] 	refresh = false
+[debug] no default cache defined: set to C:\Users\jeffr\.ivy2\cache
 [debug] resolving dependencies for configuration 'default'
 [debug] == resolving dependencies for default#helloscala$sbt_2.12;0.1 [default]
 [debug] == resolving dependencies default#helloscala$sbt_2.12;0.1->org.scala-sbt#sbt;0.13.8 [default->default(compile)]
@@ -704,9 +704,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 10294ms :: artifacts dl 2129ms
+[debug] :: resolution report :: resolve 5015ms :: artifacts dl 423ms
 [debug] 	report for default#helloscala$sbt_2.12;0.1 default produced in C:\Users\jeffr\Documents\CSC_344\Spring_2019\HelloScala\target\resolution-cache\reports\default-helloscala$sbt_2.12-default.xml
-[debug] 	resolve done (10294ms resolve - 2129ms download)
+[debug] 	resolve done (5015ms resolve - 423ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#helloscala$sources_2.12;0.1
 [debug] 	confs: [default]
@@ -1070,6 +1070,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 1026ms :: artifacts dl 155ms
+[debug] :: resolution report :: resolve 674ms :: artifacts dl 153ms
 [debug] 	report for default#helloscala$sources_2.12;0.1 default produced in C:\Users\jeffr\Documents\CSC_344\Spring_2019\HelloScala\target\resolution-cache\reports\default-helloscala$sources_2.12-default.xml
-[debug] 	resolve done (1026ms resolve - 155ms download)
+[debug] 	resolve done (674ms resolve - 153ms download)

@@ -7,6 +7,7 @@ import scala.io.StdIn.readLine
 
 abstract class Tree
 
+
 case class S(c: Tree) extends Tree
 
 case class E(l: Tree, c: Option[String], r: Option[Tree]) extends Tree
@@ -31,9 +32,20 @@ A  -: C | '(' E ')'
 */
 
 object sreduce extends Combinators {
-  val ms_index = 0
-///*
-  def s_match(t: Tree): Boolean = t match {
+  override def skipWhitespace = false
+  var idx = 0
+//  var s:String
+  var v:String = _
+var he =0
+  def v_help(p : Int): Boolean = {
+    idx +=1
+    return true
+
+  }
+//  def sv_i (p:Int):Boolean = {
+//
+//  }
+def s_match(t: Tree): Boolean = t match {
     case S(c) => s_match(c)
 
     case E(l, Some(c), Some(r) ) => s_match(l) || s_match(r)
@@ -54,30 +66,34 @@ object sreduce extends Combinators {
 
     case A (None, c, None) => s_match(c)
 
+//    case C_Cons(c) => c.equals(".")  _
 
-    case C_Cons (c) => true
+    case C_Cons (c) if  c.equals(String.valueOf(v.charAt(idx))) => v_help(idx)
+    //idx +=1 true
+
+    case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false =>  false
+
+  //    case C_Cons (c) if (c.equals(v.charAt(idx))) => true
+  //    case C_Cons (c) => c.equals(v.charAt(idx)) == false
+//          .equals(v.charAt(idx).toString())  true
 
   }
-
-  def m_match (s: String) : Boolean = s match {
-
-      case E (C_Cons(c), s, i) => c == s.toString().indexOf()
-//    case C_Cons (c) if (s.equals("."))  => true
-
-}
 
   def main(args: Array[String]) {
     print("pattern? ")
     val e_s = scala.io.StdIn.readLine()
-    print("string?")
+    val exp:Tree = parseAll(e, e_s).get
+
+    print("string? ")
     val kb = scala.io.StdIn.readLine()
-    val exp:Tree = parseAll(e, "(ab)|c").get
-//    println(exp)
-    //val exp:Tree = parseAll(e, e_s).get
-    if (m_match(exp)) {
+    //assignment to the global variable v
+    v = kb
+    if (s_match(exp)) {
       println("match")
+    } else {
+      println("no match")
     }
-//    println("no match")
+
 
 //      val exp:Tree = parseAll(e, "ab.|c").get
 //      println(exp)
@@ -99,7 +115,8 @@ override def skipWhitespace = false
 
   def a: Parser [Tree] = lp ~ e ~ rp  ^^ {case lp ~ c ~ rp => A(Some(lp), c, Some(rp))} | chose ^^ {case c => A(None ,c, None)}
 
-    def chose: Parser[Tree] = cons ^^{case c => C_Cons(c)}
+//    def chose: Parser[Tree] = cons ^^{case c => C_Cons(c)}
+def chose: Parser[Tree] = cons ^^{case c => C_Cons(c)}
     //need to handle dot case (. -> any number)
 //    def
 

@@ -4,7 +4,7 @@
 		module="helloscala-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20190327124538"
+		publication="20190414203124"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
