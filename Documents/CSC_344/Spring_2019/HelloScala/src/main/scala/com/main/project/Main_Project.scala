@@ -34,30 +34,52 @@ A  -: C | '(' E ')'
 object sreduce extends Combinators {
   override def skipWhitespace = false
   var idx = 0
-//  var s:String
   var v:String = _
-var he =0
-  def v_help(p : Int): Boolean = {
-    idx +=1
-    return true
+  var b_char= -1
 
+
+  def backup_alt() : Unit= {
+    b_char= idx
+//    save()
+//return true
   }
-//  def sv_i (p:Int):Boolean = {
-//
+  //worry about left index, if left doesnt work reset
+    def backup_Rev(): Unit= {
+    idx = b_char
+//        return false
+  }
+
+//def rev(): Boolean= {
+//  idx = b_char
+//  return false
+//}
+//    def save() : Boolean = {
+//    b_char= idx -1
+////    idx= b_char
+//      return true
 //  }
+
+//  def save() : Boolean = {
+//    if (idx ==v.length-1) {
+//      return true
+//    }
+////     _
+////    idx += 1
+////    save()
+//  }
+
 def s_match(t: Tree): Boolean = t match {
     case S(c) => s_match(c)
 
-    case E(l, Some(c), Some(r) ) => s_match(l) || s_match(r)
+    case E(l, Some(c), Some(r) ) => {b_char=idx; s_match(l) || s_match(r) } //; backup_alt()
+//    case E(l, Some(c), Some(r) ) if s_match(l) == false => { backup_Rev(); s_match(r);}
 
     case E(l, None, None) => s_match(l)
-
-    case T(l, Some(r)) => s_match(l) || s_match(r)
+//    case E(l, None, None) s_match(l) == false => false
+    case T(l, Some(r)) => s_match(l) && s_match(r)
 
     case T (l, None) => s_match(l)
 
-//    case F (l, Some(r)) => s_match(l)
-//    case F (l, None) => s_match(l)
     case F (Some(l), Some(r)) => s_match(l)
 
     case F (Some(l), None) => s_match(l)
@@ -66,16 +88,12 @@ def s_match(t: Tree): Boolean = t match {
 
     case A (None, c, None) => s_match(c)
 
-//    case C_Cons(c) => c.equals(".")  _
+    case C_Cons(c) if c.equals(".") && c.equals(String.valueOf(v.charAt(idx))) == false => {idx += 1; true}
 
-    case C_Cons (c) if  c.equals(String.valueOf(v.charAt(idx))) => v_help(idx)
-    //idx +=1 true
-
+    case C_Cons (c) if  c.equals(String.valueOf(v.charAt(idx))) => {idx+=1; b_char+=1 ; true;}
+//    case C_Cons (c) if  c.equals(v.substring(idx)) => save()
     case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false =>  false
 
-  //    case C_Cons (c) if (c.equals(v.charAt(idx))) => true
-  //    case C_Cons (c) => c.equals(v.charAt(idx)) == false
-//          .equals(v.charAt(idx).toString())  true
 
   }
 
@@ -88,7 +106,7 @@ def s_match(t: Tree): Boolean = t match {
     val kb = scala.io.StdIn.readLine()
     //assignment to the global variable v
     v = kb
-    if (s_match(exp)) {
+    if (s_match(exp) && idx ==v.length) {
       println("match")
     } else {
       println("no match")
@@ -127,6 +145,6 @@ def chose: Parser[Tree] = cons ^^{case c => C_Cons(c)}
 //    def dot [Tree] = " "
     def cons [Tree] = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"|
       "a" | "b" | "c"| "d" | "e"| "f"| "g"| "h"| "i"| "j"| "k"| "l"|
-      "m"| "n"| "o"| "p"| "q"| "r"| "s" | "t"| "u"| "v"| "w" | "x" | "y" | "z" | "."
+      "m"| "n"| "o"| "p"| "q"| "r"| "s" | "t"| "u"| "v"| "w" | "x" | "y" | "z" | "." | " "
   }
 

@@ -4,7 +4,7 @@
 		module="helloscala$sbt_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190416160328"
+		publication="20190424082812"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
