@@ -35,12 +35,12 @@ object sreduce extends Combinators {
   override def skipWhitespace = false
   var idx = 0
   var v:String = _
+  var p:String = _
   var b_char= -1
-
+  var b2_char= -1
 
   def backup_alt() : Unit= {
     b_char= idx
-//    save()
 //return true
   }
   //worry about left index, if left doesnt work reset
@@ -49,58 +49,47 @@ object sreduce extends Combinators {
 //        return false
   }
 
-//def rev(): Boolean= {
-//  idx = b_char
-//  return false
-//}
-//    def save() : Boolean = {
-//    b_char= idx -1
-////    idx= b_char
-//      return true
-//  }
-
-//  def save() : Boolean = {
-//    if (idx ==v.length-1) {
-//      return true
-//    }
-////     _
-////    idx += 1
-////    save()
-//  }
-
 def s_match(t: Tree): Boolean = t match {
     case S(c) => s_match(c)
 
     case E(l, Some(c), Some(r) ) => {b_char=idx; s_match(l) || s_match(r) } //; backup_alt()
-//    case E(l, Some(c), Some(r) ) if s_match(l) == false => { backup_Rev(); s_match(r);}
 
     case E(l, None, None) => s_match(l)
-//    case E(l, None, None) s_match(l) == false => false
+
+//    case T(l, Some(r)) if  s_match(l) == false => {backup_Rev(); s_match(r);}
+
     case T(l, Some(r)) => s_match(l) && s_match(r)
 
     case T (l, None) => s_match(l)
 
-    case F (Some(l), Some(r)) => s_match(l)
+    case F (Some(l), Some(r)) => {s_match(l)}
 
-    case F (Some(l), None) => s_match(l)
+    case F (Some(l), None) => {b2_char = idx;s_match(l)}
+
+    case F (None, None) => {b_char = idx; true}
 
     case A (Some(lp), c, Some(rp)) => s_match(c)
 
     case A (None, c, None) => s_match(c)
+//regular case. If the the pattern tree char and match char are equal, increment and return true
+//    case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false && idx != 0=> {backup_Rev(); true}
+      //check if theres a dot in the pattern, AS WELL AS the match string fails the case
+    case C_Cons (c) if idx  > v.length-1 => {idx= b2_char; false;}
+    case C_Cons(c) if  c.equals(String.valueOf(v.charAt(idx))) => {idx += 1; true}
+//checks if the
 
-    case C_Cons(c) if c.equals(".") && c.equals(String.valueOf(v.charAt(idx))) == false => {idx += 1; true}
 
-    case C_Cons (c) if  c.equals(String.valueOf(v.charAt(idx))) => {idx+=1; b_char+=1 ; true;}
-//    case C_Cons (c) if  c.equals(v.substring(idx)) => save()
+    case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false && idx != 0=> {backup_Rev(); false;}
+//default case, if fails, return false
     case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false =>  false
-
 
   }
 
   def main(args: Array[String]) {
     print("pattern? ")
     val e_s = scala.io.StdIn.readLine()
-    val exp:Tree = parseAll(e, e_s).get
+    p = e_s
+    val exp:Tree = parseAll(e, p).get
 
     print("string? ")
     val kb = scala.io.StdIn.readLine()
