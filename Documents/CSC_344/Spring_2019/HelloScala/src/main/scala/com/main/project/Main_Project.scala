@@ -66,21 +66,22 @@ def s_match(t: Tree): Boolean = t match {
 
     case F (Some(l), None) => {b2_char = idx;s_match(l)}
 
-    case F (None, None) => {b_char = idx; true}
+//    case F (None, None) => {b2_char = idx; true}
 
     case A (Some(lp), c, Some(rp)) => s_match(c)
 
     case A (None, c, None) => s_match(c)
-//regular case. If the the pattern tree char and match char are equal, increment and return true
-//    case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false && idx != 0=> {backup_Rev(); true}
-      //check if theres a dot in the pattern, AS WELL AS the match string fails the case
-    case C_Cons (c) if idx  > v.length-1 => {idx= b2_char; false;}
+
+
+    //check if the index surpasses the string length, (this is the case if there's an option)
+    case C_Cons (c) if idx  > v.length-1 => {idx= b2_char; idx +=1; true;}
+    //regular case. If the the pattern tree char and match char are equal, increment and return true
     case C_Cons(c) if  c.equals(String.valueOf(v.charAt(idx))) => {idx += 1; true}
-//checks if the
-
-
+    //check if theres a dot in the pattern, AS WELL AS the match string fails the case
+    case C_Cons(c) if c.equals(".") && c.equals(String.valueOf(v.charAt(idx))) == false => {idx += 1; true}
+    //makes sure that the string returns to the
     case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false && idx != 0=> {backup_Rev(); false;}
-//default case, if fails, return false
+    //default case non-match, if fails, return false
     case C_Cons (c) if c.equals(String.valueOf(v.charAt(idx))) ==false =>  false
 
   }
@@ -116,7 +117,7 @@ override def skipWhitespace = false
 
     def t: Parser [Tree] = f ~ t ^^ {case l ~ r => T(l, Some(r))} | f ^^{case l => T(l, None)}
 
-//    def f: Parser[Tree] = a ~ opt ^^ {case l ~ r => F(l,Some(r))} | a ^^ {case l  => F(l, None) }
+//    def f: Parser[Tree] = a ~ opt ^^ {case l ~ r => F(Some(l),Some(r))} | a ^^ {case l  => F(Some(l), None)} | a
     def f: Parser[Tree] = a ~ opt ^^ {case l ~ r => F(Some(l),Some(r))} | a ^^ {case l  => F(Some(l), None) }
 //  | a ~ opt ^^ {case l ~ r => F(None, None)}
 
