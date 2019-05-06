@@ -1,0 +1,12 @@
+..\yattag\__init__.py
+..\yattag\__pycache__\__init__.cpython-36.pyc
+..\yattag\__pycache__\doc.cpython-36.pyc
+..\yattag\__pycache__\indentation.cpython-36.pyc
+..\yattag\__pycache__\simpledoc.cpython-36.pyc
+..\yattag\doc.py
+..\yattag\indentation.py
+..\yattag\simpledoc.py
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+top_level.txt

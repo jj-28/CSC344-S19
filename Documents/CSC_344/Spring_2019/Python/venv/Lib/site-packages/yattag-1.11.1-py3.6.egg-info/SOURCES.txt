@@ -1,0 +1,12 @@
+README.rst
+test/tests_doc.py
+test/tests_indentation.py
+test/tests_simpledoc.py
+yattag/__init__.py
+yattag/doc.py
+yattag/indentation.py
+yattag/simpledoc.py
+yattag.egg-info/PKG-INFO
+yattag.egg-info/SOURCES.txt
+yattag.egg-info/dependency_links.txt
+yattag.egg-info/top_level.txt
