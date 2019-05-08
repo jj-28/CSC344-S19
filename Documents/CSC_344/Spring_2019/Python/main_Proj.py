@@ -7,10 +7,11 @@ from yattag import Doc
 from os.path import dirname
 import pprint
 
-
 # import json2table
 
 r_fileList = {}
+
+
 def getInfo():
     # get the name of the directory you want to get as a
     dir_name = sys.argv[1]
@@ -81,8 +82,8 @@ def getInfo():
                                 rd = os.path.relpath(rot, dir_name)
                                 # print("rd" + rd)
                                 rf = os.path.join(rd, f_w)
-                                rf =rf.replace("../", "")
-                                rf = "../CSC344/" +rf
+                                rf = rf.replace("../", "")
+                                rf = "../CSC344/" + rf
                                 # print("rel file" + rf)
                                 if ".html" in f_w:
                                     with tag('td'):
@@ -94,12 +95,10 @@ def getInfo():
     print("curr dir: " + os.getcwd())
     gh = 'zip -r csc.zip CSC344'
     os.system(gh)
-    cmd ='./uuencode csc.zip "cscpFINAL.zip" | mailx -s "MY CODE" ' + email
+    cmd = './uuencode csc.zip "cscpFINAL.zip" | mailx -s "MY CODE" ' + email
     os.system(cmd)
     print("sent!")
     # open up a count
-
-
 
 
 def makeJson(a_n, line_num, f_name, rel_path, a_path, rel_dir):
@@ -129,7 +128,6 @@ def makeJson(a_n, line_num, f_name, rel_path, a_path, rel_dir):
             m = res
             # replace carriage returns n such
 
-
             root['src'] = m
             json.dump(root, outfile, indent=4, sort_keys=True)
 
@@ -142,6 +140,7 @@ def makeHtml(a_n, line_num, f_name, rel_path, a_path, rel_dir):
     f_name = f_name.replace("\n", "")
     j = "summary_" + a_n + ".html"
     m = []
+    word_dict = []
     with open(a_path, "r") as f:
         with open(j, "w") as outfile:
             doc, tag, text = Doc().tagtext()
@@ -179,7 +178,7 @@ def makeHtml(a_n, line_num, f_name, rel_path, a_path, rel_dir):
                         for line in f:
                             # m = m.append(line)
                             line = line.replace("\r", "")
-                            line = line.replace("->", "")
+                            # line.translate(None, string.punctuation)
                             line.strip()
                             with tag('tr'):
                                 text(" ")
@@ -190,12 +189,27 @@ def makeHtml(a_n, line_num, f_name, rel_path, a_path, rel_dir):
                                 with tag('td'):
                                     text(" ")
                                 with tag('td'):
-                                    pattern = re.compile("^(?!\#|\\.|\/|\}|\*).*(?!\").$", re.M | re.X)
-
-                                    res = pattern.findall(line)
-                                    # m.append(res)
-                                    str1 = ''.join(res)
+                                    # l_arr = line.split('?,\,#,.,%,=,>,(,),{,},:,|,-,[,]')
+                                    # l_arr = line.split('!,",#,$,%,&,(,),*,+,,,-,.,/,:,;,<,=,>,?,@,[,\,],^,_,`,{,},~, 0,1,2,3,4,5,6,7,8,9')
+                                    # line_n  =line.replace('!,",#,$,%,&,(,),*,+,,,-,.,/,:,;,<,=,>,?,@,[,\,],^,_,`,{,},~, 0,1,2,3,4,5,6,7,8,9', "\n")
+                                    # for x in l_arr:
+                                    #     if x not in word_dict:
+                                    #         word_dict.append(x)
+                                    #         word_dict.append(' \n')
+                                    #     else:
+                                    #         continue
+                                    # startPunct= "^(?!\#|\\.|\/|\}|\*|\;).*(?!\").$"
+                                    # allPunct ="(?![^\w\s])."
+                                    # allPunct = re.compile("(?![^\w\s]).", re.M | re.X)
+                                    allPunct = re.compile("(?![^a-zA-Z\s\_]).", re.M | re.X)
+                                    # for x in
+                                    # res = re.compile("(%s)" % (startPunct, allPunct), re.M | re.X).findall(line)
+                                    # res = startPunct.findall(line)
+                                    a_p = allPunct.findall(line)
+                                    str1 = ''.join(a_p)
+                                    # str1 = ''.join(word_dict)
                                     text(str1)
+                                    # text(line_n)
                                     # text(line)
             outfile.write(doc.getvalue())
 
