@@ -1,0 +1,366 @@
+﻿body, html {
+    height: 100%;
+    width: 100%;
+    border: none
+}
+
+.row {
+    margin-left: 0!important;
+    margin-right: 0!important
+}
+
+.home {
+    background-image: url("../img/Website\ Banner-min.png");
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    padding: 0 5px 20px
+}
+
+.beatsbanner {
+    background-image: url(img/rsz_beatpad.jpg)
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: table
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.lead {
+    text-align: left
+}
+
+.countdown {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px
+}
+
+
+.navbar-dark {
+    border: none
+}
+
+.bg-dark {
+    transition: 500ms;
+    background: rgba(245, 245, 245, 0) !important;
+
+}
+.bg-dark.scrolled {
+    background: #0f2b32 !important;
+
+}
+.brand, .navbar-brand img {
+    float: left;
+    position: relative;
+    width: 42px;
+    height: 32px
+}
+.navbar-dark .navbar-brand {
+    min-height: 30px;
+    width: 150px;
+    background-color: none;
+    border: none;
+    display: inline-block
+}
+
+.navbar-header {
+    margin-left: 8.3333%!important
+}
+
+
+.navbar.navbar-dark .navbar-collapse {
+    border: none;
+    box-shadow: none
+}
+
+.navbar-dark .navbar-nav li a {
+    border: 0;
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif!important;
+    font-weight: 700;
+    letter-spacing: .05em
+}
+
+.navbar a {
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav li a.active, .navbar-dark .navbar-nav li a:hover {
+    color: #01c4cd;
+    border-color: transparent;
+}
+
+.heading {
+    margin: 0;
+    color: #fff;
+    vertical-align: top;
+    padding-top: 1%;
+    padding-left: 8%;
+    position: relative;
+    font-size: 16pt;
+    vertical-align: middle;
+    letter-spacing: .2em;
+    font-family: Montserrat, sans-serif!important;
+    font-weight: 700;
+    font-variant: small-caps
+}
+
+
+.credits>.row {
+    margin-left: 0
+}
+
+.landing {
+    background-image: url(../img/ocean.jpg);
+    background-size: cover;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    color: #fff
+}
+
+.landing-text {
+    color: #fff
+}
+
+.fa-paper-plane-o {
+    font-size: 5px
+}
+
+.card {
+    border: 0 solid;
+    border-radius: -1px
+}
+
+.accordion-cards {
+    font-size: 18px;
+    text-decoration: none;
+    border: 0
+}
+
+.banner-overlay {
+    padding-top: 160px;
+    background-color: #f8f8ff
+}
+
+.faq {
+    background-color: #03333e;
+    padding-top: 15px;
+    padding-bottom: 10px
+}
+
+.faq-titles {
+    padding-top: 2px;
+    color: #fffF
+}
+
+.faq-titles hr {
+    border-top: 5px solid #fff;
+    border-radius: 2px;
+    width: 10%;
+    margin-left: 45%
+}
+
+.img-thumbnail {
+    padding: 0;
+    border: 0
+}
+
+.card-header.collapsed {
+    box-shadow: none;
+    background-color: #005458;
+    text-decoration: none;
+    color: #fff;
+    text-align: center
+}
+
+.card-header:not(.collapsed) {
+    background-color: #005458;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center
+}
+
+#leaseTypes {
+    background-color: #005458;
+    color: #fff
+}
+
+#deliverables {
+    background-color: #005458;
+    color: #fff
+}
+
+#paymentTypes {
+    background-color: #005458;
+    color: #fff
+}
+
+.credits {
+    color: #000;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center
+}
+
+.license-types {
+    background-color: #03333e!important
+}
+
+.banner-main {
+    background-color: #f8f8ff
+}
+
+.beat-banner h3 {
+    color: #000
+}
+
+.beat-banner h5 {
+    color: #0f2b32
+}
+
+.tplayer h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 15px
+}
+
+.tplayer h3 {
+    font-size: 16px;
+    padding-bottom: 10px
+}
+
+.tplayer h4 {
+    font-size: 16px;
+    padding-bottom: 10px
+}
+
+
+
+.content {
+    margin-top: 100px
+}
+
+
+.tplayer {
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    padding: 0 5px 20px
+}
+
+.typer h1 {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace
+}
+
+.bogo {
+    margin: 20px;
+    border: 0
+}
+
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    z-index: 10
+}
+
+.landing-text h2 {
+    font-size: 200%;
+    font-weight: 400;
+    color: #fff
+}
+
+.padding {
+    padding: 80px 0
+}
+
+.center-div {
+    background-color: #000
+}
+
+.padding img {
+    width: 100%;
+    border: none
+}
+
+#fixed {
+    display: table;
+    height: 60%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    border: none
+}
+
+footer {
+    width: 100%;
+    background-color: #0f2b32;
+    /* padding: 2% 2% 2%; */
+    color: #fff
+}
+
+.fa>.ft {
+    padding: 15px;
+    font-size: 25px;
+    color: #fff
+}
+
+.fa:hover>ft {
+    color: #01c4cd;
+    text-decoration: none
+}
+
+.fa-paper-plane-o {
+    font-size: 15px
+}
+
+.fa-check-circle {
+    color: #4dbe3b
+}
+
+.fa-angle-down {
+    font-size: 20px;
+    color: #0f2b32;
+    padding: 0, 0, 0, 0
+}
+
+.icon {
+    max-width: 200px
+}

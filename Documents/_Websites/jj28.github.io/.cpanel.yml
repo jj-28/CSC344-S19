@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jbenfvvk/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    

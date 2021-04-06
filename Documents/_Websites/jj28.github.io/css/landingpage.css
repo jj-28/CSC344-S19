@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    border: none
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    display: table
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0!important;
+    margin-right: 0!important
+}
+
+
+
+.home {
+    background-image: url("../img/ocean.jpg");
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    padding: 0 5px 20px
+}
+
+.btn {
+    font-family: 'Karla', sans-serif;
+}
+
+.center-div {
+    background-color: #000
+}
+
+.padding img {
+    width: 100%;
+    border: none
+}
+
+footer {
+    width: 100%;
+    background-color: #0f2b32;
+    color: #fff;
+    background-image: url("../img/ocean.jpg");
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
